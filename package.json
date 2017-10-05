@@ -3,9 +3,13 @@
   "version": "0.5.1",
   "description": "A smart data table component for React.js meant to be configuration free",
   "scripts": {
-    "start": "python -m SimpleHTTPServer 3000"
+    "start": "python -m SimpleHTTPServer 3004",
+    "build": "yarn webpack",
+    "build-test": "yarn webpack -- --env test",
+    "build-dev": "yarn webpack -- --env development"
   },
-  "main": "lib/index.js",
+  "main": "dist/react.smart.data.table.js",
+  "main2": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joaocarmo/react-smart-data-table.git"
